@@ -18,7 +18,7 @@ class School
 
 
 def sort 
- @roster.map do |key, value|
+ @roster.map_value do |key, value|
    value = value.sort {|a,b| a[0] <=> b[0]}
   end 
   @roster
