@@ -18,8 +18,8 @@ class School
 
 
 def sort 
- @roster.each_key do |key|
-   @roster[key].sort {|a,b| a[0] <=> b[0]}
+ @roster.each_value do |value|
+   value.sort {|a,b| a[0] <=> b[0]}
   end 
    
   
